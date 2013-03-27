@@ -386,7 +386,7 @@ function adminpage_mask_color_designer () {
 	<div class="icon32" id="icon-options-general"><br /></div>
 		<h2>Podlove Color Designer</h2>
 		<h5>Version 0.3.6 Alpha</h5>
-	
+	<!--h3name CL_SECTION includes-->
 			<form action="options.php" method="post">	
 			<div class="form-item">
 			<?php	
@@ -397,7 +397,7 @@ function adminpage_mask_color_designer () {
 			<div id="picker"></div>
 <hr />	
 	
-	<p><b>Ergebnis:</b></p>
+	<p><h3>Player Ergebnis:</h3></p>
 	<p style="width: 500px;">
 		<audio id="testplayer">
 			<source src="<?php echo $playeraudio; ?>/podlove-test-track.mp4" type="audio/mp4"></source>
@@ -449,7 +449,7 @@ function adminpage_mask_color_designer () {
 function adminpage_mask_init () {
 	$vars = color_get_option ();	
 	register_setting (CL_GROUP, color_option, 'adminpage_color_field_inputs');
-	add_settings_section (CL_SECTION, __('Vorschau', CL_LOCAL), 'adminpage_color_section', CL_PAGE);
+	add_settings_section (CL_SECTION, __('Player Vorschau:', CL_LOCAL), 'adminpage_color_section', CL_PAGE);
 #---------------------------
 	//register init wpfild
 	add_settings_field (

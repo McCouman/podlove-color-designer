@@ -41,14 +41,9 @@ function color_get_option() {
 
 ############################################################################################################  Output PPP CSS
 
-function cssadmin_playercss($tu) {  //tests12
-	
-	$color_option = color_get_option();	
-	#if (!empty ($color_option['input_color'])) {
-	#	$tu = $color_option['input_color'];
-	#}
-	//tests12
-	#global $tu;
+function cssadmin_playercss() { 
+	// read color field input
+	$color_option = color_get_option();
 	
 /**
  *	automaticle Podlove Color Designer
@@ -93,6 +88,12 @@ function cssadmin_playercss($tu) {  //tests12
 	// player CSS for global outputs
 	echo '<style id="mc" type="text/css">'; 
 	
+	
+	####!!!! To change the information of Farbicons - is not described as a color field !!!!
+	#  
+	#  Interpretation:
+ 	#  #555; = dark color (a:hover)
+	#  #777; = standard iconcolor 
 ?>
 /*****************************************
 /*          TEST AREA ONE COLOR          *

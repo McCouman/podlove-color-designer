@@ -454,16 +454,37 @@ function adminpage_mask_init () {
 	//register init wpfild
 	add_settings_field (
 		'input_color',__('', CL_LOCAL),
-		'form_text',
+		'form_color_input',
 		CL_PAGE,
 		CL_SECTION,
 		array (
 			'id' => 'input_color',
 			'value' => $vars,
 			'default' => '#000000',
+			#'description' => __('Playerfarbe', CL_LOCAL), //no output label
+			'description' => __('', CL_LOCAL), //#fixed no admin
+		)
+	);
+	
+#---------------------------	
+	//{ ... icon fields integration 
+	// in Arbeit!
+	//... }
+	/*
+	add_settings_field (
+		'input_color',__('', CL_LOCAL),
+		'form_color_input',
+		CL_PAGE,
+		CL_SECTION,
+		array (
+			'id' => 'input_icon_color',
+			'value' => $vars,
+			'default' => '#000000',
 			'description' => __('Playerfarbe', CL_LOCAL),
 		)
 	);
+	*/
+	
 }
 
 #------------------------------------------------------------------------------------------------------
@@ -494,7 +515,7 @@ function adminpage_color_section ($fields) {
  *
  * @param type $args 
  */
-function form_text ($args) {
+function form_color_input ($args) {
 	
 	// defaults
 	$id = '';
@@ -529,7 +550,7 @@ function form_text ($args) {
  *
  * @param type $args 
  */
-function form_select ($args) {
+function form_color_select ($args) {
 	
 	// defaults
 	$id = '';

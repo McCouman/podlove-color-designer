@@ -366,7 +366,7 @@ function adminpage_mask_color_designer () {
 	}
 	input#input_color{ 
 		height: 200px;
-		width: 100%;
+		width: 600px;
 		background-image: url(<?php echo $playerimage; ?>) !important;
 		background
 		color: transparent !important;
@@ -378,7 +378,7 @@ function adminpage_mask_color_designer () {
 	}
 	div#picker {
 		margin-top: -212px;
-		margin-bottom: 100px;
+		margin-bottom: 10px;
 	}
 </style>
 

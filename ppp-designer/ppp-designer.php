@@ -398,7 +398,7 @@ function adminpage_mask_color_designer () {
 <hr />	
 	
 	<p><h3>Player Ergebnis:</h3></p>
-	<p style="width: 500px;">
+	<p style="width: 680px;">
 		<audio id="testplayer">
 			<source src="<?php echo $playeraudio; ?>/podlove-test-track.mp4" type="audio/mp4"></source>
 			<source src="<?php echo $playeraudio; ?>/podlove-test-track.mp3" type="audio/mp3"></source>
